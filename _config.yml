@@ -15,10 +15,10 @@ theme:
      <p>I'm a kickass developer specializing in Rails.</p>
   header_text_feature_image: 
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with caffeine.
 
   # Icons
-  rss: false
+  rss: true
   email_address: sanjay.y.patel@gmail.com # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
@@ -27,8 +27,8 @@ theme:
   flickr:
   github: sanjayypatel # github profile name, e.g. "madebymunsters"
   google_plus:
-  instagram: 
-  linkedin:  # Full URL
+  instagram: sanjayypatel
+  linkedin: http://linkedin.com/in/sanjayypatel # Full URL
   pinterest:
   reddit:
   soundcloud:

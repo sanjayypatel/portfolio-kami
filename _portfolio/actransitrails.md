@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blocitoff
-thumbnail-path: "img/blocitoff.png"
-short-description: Build a self-destructing to-do list application.
+title: actransit_rails
+thumbnail-path: "img/actransitrails.png"
+short-description: A gem for accessing the ACTransit API in Rails.
 
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/blocitoff.png)
+![]({{ site.baseurl }}/img/actransitrails.png)
 
 ## Explanation
 

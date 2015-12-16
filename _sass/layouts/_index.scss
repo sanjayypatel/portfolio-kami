@@ -14,7 +14,7 @@
     a {
       font-size:0.8em;
       text-transform: uppercase;
-      color:#d8d8d8;
+      color: $site-title-color;
     }
   }
   ul {
@@ -95,6 +95,7 @@
         display:block;
         text-align: center;
         margin:0 auto 1%;
+        box-shadow: 1px 1px 5px lightgrey;
       }
     }
     .project-description {

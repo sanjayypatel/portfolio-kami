@@ -19,6 +19,14 @@ article {
     img {
       text-align:center;
       margin:0 auto;
+      box-shadow: 1px 1px 5px lightgrey;
+    }
+  }
+  p.small-img {
+    img {
+      max-width: 25%;
+      min-width: 200px;
+      box-shadow: none;
     }
   }
 }
