@@ -15,7 +15,8 @@ theme:
      <p>Backend web developer specializing in Ruby on Rails.</p>
   header_text_feature_image: 
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with caffeine.
+   <p>Powered by <a href="http://jekyllrb.com">Jekyll</a> and caffeine.</p>
+   <p>Theme forked from <a href="https://github.com/Bloc/portfolio-kami">Bloc/portfolio-kami.</p>
 
   # Icons
   rss: true
@@ -54,7 +55,7 @@ theme:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Lato:300,400,700,300italic,700italic|Abril+Fatface"
+  google_fonts: "Raleway:300,400,700,300italic,700italic|Quattrocento:400,700"
 
 # PAGINATION
 paginate: 100
