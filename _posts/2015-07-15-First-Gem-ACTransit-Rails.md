@@ -5,6 +5,7 @@ date:   2015-07-15 03:06:00
 categories: gem ruby actransit rspec
 tags: gem ruby actransit rspec learning
 ---
+
 Here's my first stab at a gem and the open-source dev community - ACTransitRails - [RubyGems](https://rubygems.org/gems/actransit_rails)
 
 It's a little Ruby wrapper for the [ACTransit API](http://api.actransit.org/transit/) that allows you to access the route and bus stop info for the Bay Area ACTransit system. 
@@ -13,11 +14,10 @@ Their API is pretty straightforward set of requests, including an access token, 
 
 Here's a little rundown of what I did.
 
-1. I built a module, `ACTransitRails`, that defined all of the helper methods I wanted to create.  Each helper method defines a `URI` instance that takes a string formatted like "http://api.actransit.org/transit/...options.../?token='api_access_token'"
+* I built a module, `ACTransitRails`, that defined all of the helper methods I wanted to create.  Each helper method defines a `URI` instance that takes a string formatted like "http://api.actransit.org/transit/...options.../?token='api_access_token'"
 Then the uri is passed to the private get_response method which makes the actual request to the api.
 
-```ruby
-
+~~~
 module ACTransitRails
   
   # base_url, search_string, and my_token are all private methods that return static parts of the url
@@ -39,26 +39,26 @@ module ACTransitRails
   end
   # ...
 end
+~~~
 
-```
+* This request is formated as an `Net::HTTP` request in a private method `get_response(uri)`.
 
-2.  This request is formated as an `Net::HTTP` request in a private method `get_response(uri)`.
-
-```ruby
+~~~
   def self.get_response(uri)
     http = Net::HTTP.new(uri.host, uri.port)
     response = http.request(Net::HTTP::Get.new(uri.request_uri))
     return JSON.parse response.body
   end
-```
-3. The `uri` passed to `get_response` is created in each of the helper method, as each method needs a specifically formatted url. Last, the response from the api is returned as JSON, which can be parsed into arrays and hashes using JSON.parse.
+~~~
+
+* The `uri` passed to `get_response` is created in each of the helper method, as each method needs a specifically formatted url. Last, the response from the api is returned as JSON, which can be parsed into arrays and hashes using JSON.parse.
 
 So that's basically it.  To use the gem, you call `ACTransitRails.configure(access_token)` where access_token is your access token as a string. Then following calls to helper methods will use your token to make requests of the api.
 
-```ruby
+~~~
 ACTransitRails.get_route('E')
 # => {"RouteId":"E","Name":"E","Description":"San Francisco - Claremont -Parkwood"}
-```
+~~~
 
 The return values for each method varies, either arrays or hashes, which is how the api responds to different requests.  I think the next thing I'll look into doing is formatting all of the responses in a standardized way, although that will take some thinking.  For now, the gem successfully simplifies a dev's access to the api in their rails apps, while still returning response in the api-expected formats, and that's good for now.  
 
