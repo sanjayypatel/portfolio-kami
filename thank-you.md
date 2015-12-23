@@ -6,4 +6,22 @@ feature-img: "img/color.png"
 hide: true
 ---
 
-Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+###Thanks for getting in touch! I'll shoot you an email as soon as I'm able.
+
+---
+
+###In the meantime, there's a lot of ways to get in touch, so feel free to reach out!
+
+_Email:_ [sanjay.y.patel@gmail.com](mailto:sanjay.y.patel@gmail.com)
+
+_Twitter:_ [@sanjayypatel](http://twitter.com/sanjayypatel)
+
+_GitHub:_ [sanjayypatel](https://github.com/sanjayypatel)
+
+_LinkedIn:_ [sanjayypatel](http://linkedin.com/in/sanjayypatel)
+
+_VSCO:_ [sanjaypatel](http://sanjaypatel.vsco.co/)
+
+_Instagram:_ [sanjayypatel](https://www.instagram.com/sanjayypatel/)
+
+_Itch.io:_ [Sanjay](http://sanjay.itch.io/)

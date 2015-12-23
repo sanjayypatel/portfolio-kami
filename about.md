@@ -13,4 +13,4 @@ I'm currently a Mac Support Specialist at the Academy of Art University, and in 
 
 You can find a more extensive rundown of my background and experience on LinkedIn.
 
-And you can see a little more about my Current Projects
+And you can see a little more about my [current projects.](/#work)

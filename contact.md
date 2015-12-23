@@ -26,9 +26,9 @@ _Itch.io:_ [Sanjay](http://sanjay.itch.io/)
 
 ###Or get in touch using the form below:
 
-<form action="https://getsimpleform.com/messages?form_api_token=" method="post">
+<form action="https://getsimpleform.com/messages?form_api_token=7a2e3d4bd19e7acbd621858e9a9ee421" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='full-url/thank-you/' />
+  <input type='hidden' name='redirect_to' value='http://sanjayypatel.com/thank-you/' />
   <input type='text' name='name' placeholder='Your Full Name' />
   <input type='email' name='email' placeholder='Your E-mail Address' />
   <textarea name='message' placeholder='Write your message ...'></textarea>
