@@ -9,7 +9,7 @@ short-description: An executive summary app.
 {:.center}
 ![Screenshot of Cogently front page.]({{ site.baseurl }}/img/cogently.png)
 
-Cogently is a tool that puts teams in control of document control and synthesis, allowing users to quickly upload and summarize documents. With document summaries and notes from staff collected in one place, Cogently lets your team managers get up to speed in a snap.
+Cogently is a tool that allows users to quickly upload and summarize documents. Prior to an important meeting for example,  document summaries and notes from staff collected in one place allows team managers to get up to speed in a snap.
 
 ---
 
@@ -35,7 +35,7 @@ With this core challenge in mind, Cogently was planned to satisfy a series of us
 > * add a summary to each document.
 > * view and download the original document.
 
-From a development perspective I had different set of goals:
+From a development perspective I had a different set of goals:
 
 > ### As a developer I want to
 >
@@ -43,6 +43,8 @@ From a development perspective I had different set of goals:
 > * leverage Bootstrap's front end framework for a simple user interface.
 > * isolate Bootstrap-specific classes from my own code.
 > * convert views to [Haml](http://haml.info) for more readable code.
+> * 
+> * 
 
 ---
 
@@ -60,7 +62,7 @@ Addressing the user needs started with sketching out views and the model. I knew
 {:.center}
 ![Sketch of app model.]({{ site.baseurl }}/img/modelsketch.png)
 
-<p class="image-caption">I went through several iterations of an initial model design. As the project progressed, the model was changed and expanded.</p>
+<p class="image-caption">I went through several iterations of an initial model design. As the project progressed, the database design was changed and expanded.</p>
 
 Moving from sketches to code, I tracked each workable chunk of progress in it's own issue attached to the github repository. These issues were grouped in larger [milestones](https://github.com/sanjayypatel/Cogently/milestones) based on major user stories.
 
@@ -74,7 +76,7 @@ On the recommendation of my mentor, I employed a pair of gems ([haml/haml](https
 
 While researching Bootstrap best practices I encountered several articles about Bootstrap maintainability and extending existing classes in Sass. Here's an abbreviated reading list:
 
-* [Please stop ambedding Bootstrap classes in your HTML!](http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html?utm_source=designernews)
+* [Please stop embedding Bootstrap classes in your HTML!](http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html?utm_source=designernews)
 * [Using Sass To Semantically @extend Bootstrap](http://www.sitepoint.com/sass-semantically-extend-bootstrap/)
 * [The Extend Concept](https://css-tricks.com/the-extend-concept/)
 
@@ -93,7 +95,7 @@ In developing Cogently, I learned a few tough lessons.
 
 <p class="image-caption">Example document uploaded to Cogently.</p>
 
-PDF parsing is a bit beyond the skillset of a junior web developer, although some useful gems and libraries exist to make it easier. One big challenge was finding a way to extract and reference images in pdfs in a way that Rails could store and reprsent.  To make it tougher, images embedded within pdfs can come in a variety of formats, requiring specialized code to extract each file type.  
+PDF parsing is a bit beyond the skillset of a junior web developer, although some useful gems and libraries exist to make it easier. One big challenge was finding a way to extract and reference images in pdfs in a way that Rails could store and represent.  To make it tougher, images embedded within pdfs can come in a variety of formats, requiring specialized code to extract each file type.  
 
 Since that was beyond the scope of my prototype's goals, I decided to focus on extracting only the text of pdfs, which is a comparatively simpler process.  Namely, pdf parsers can't tell the difference between a complete sentence and a fragment.  In fact, the parser was spitting out paragraph elements based on newlines encountered in the pdf.  While this still allowed user's to write notes referencing a specific line of text in the document, it was hardly elegant.
 
