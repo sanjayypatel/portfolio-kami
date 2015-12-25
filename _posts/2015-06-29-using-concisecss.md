@@ -2,7 +2,6 @@
 layout: post
 title:  "Using Concise.css"
 date:   2015-06-29 14:42:00
-categories: css
 tags: css frameworks concise.css
 ---
 As a new developer-in-training, a lot of my Ruby on Rails projects up until now have relied on Bootstrap to get boilerplate styling out of the way quickly.  This is great for getting a layout and up on the screen quickly, without having to split focus between the back and front ends of an application.  

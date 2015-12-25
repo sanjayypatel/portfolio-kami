@@ -2,7 +2,6 @@
 layout: post
 title:  "First Gem - ACTransitRails"
 date:   2015-07-15 03:06:00
-categories: gem ruby actransit rspec
 tags: gem ruby actransit rspec learning
 ---
 Here's my first stab at a gem and the open-source dev community - ACTransitRails - [RubyGems](https://rubygems.org/gems/actransit_rails)
@@ -13,11 +12,10 @@ Their API is pretty straightforward set of requests, including an access token, 
 
 Here's a little rundown of what I did.
 
-1. I built a module, `ACTransitRails`, that defined all of the helper methods I wanted to create.  Each helper method defines a `URI` instance that takes a string formatted like "http://api.actransit.org/transit/...options.../?token='api_access_token'"
+1)   I built a module, `ACTransitRails`, that defined all of the helper methods I wanted to create.  Each helper method defines a `URI` instance that takes a string formatted like "http://api.actransit.org/transit/...options.../?token='api_access_token'"
 Then the uri is passed to the private get_response method which makes the actual request to the api.
 
-```ruby
-
+~~~
 module ACTransitRails
   
   # base_url, search_string, and my_token are all private methods that return static parts of the url
@@ -39,10 +37,9 @@ module ACTransitRails
   end
   # ...
 end
+~~~
 
-```
-
-2.  This request is formated as an `Net::HTTP` request in a private method `get_response(uri)`.
+2) This request is formated as an `Net::HTTP` request in a private method `get_response(uri)`.
 
 ```ruby
   def self.get_response(uri)
@@ -51,7 +48,7 @@ end
     return JSON.parse response.body
   end
 ```
-3. The `uri` passed to `get_response` is created in each of the helper method, as each method needs a specifically formatted url. Last, the response from the api is returned as JSON, which can be parsed into arrays and hashes using JSON.parse.
+3) The `uri` passed to `get_response` is created in each of the helper method, as each method needs a specifically formatted url. Last, the response from the api is returned as JSON, which can be parsed into arrays and hashes using JSON.parse.
 
 So that's basically it.  To use the gem, you call `ACTransitRails.configure(access_token)` where access_token is your access token as a string. Then following calls to helper methods will use your token to make requests of the api.
 
