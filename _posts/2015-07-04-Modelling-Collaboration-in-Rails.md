@@ -2,7 +2,6 @@
 layout: post
 title:  "Modeling Collaboration in Rails"
 date:   2015-07-04 02:47:00
-categories: MVC rails collaboration join
 tags: mvc rails join-table collaboration
 ---
 

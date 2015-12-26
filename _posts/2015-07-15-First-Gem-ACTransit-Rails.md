@@ -2,7 +2,6 @@
 layout: post
 title:  "First Gem - ACTransitRails"
 date:   2015-07-15 03:06:00
-categories: gem ruby actransit rspec
 tags: gem ruby actransit rspec learning
 ---
 
@@ -15,6 +14,7 @@ Their API is pretty straightforward set of requests, including an access token, 
 Here's a little rundown of what I did.
 
 * I built a module, `ACTransitRails`, that defined all of the helper methods I wanted to create.  Each helper method defines a `URI` instance that takes a string formatted like "http://api.actransit.org/transit/...options.../?token='api_access_token'"
+
 Then the uri is passed to the private get_response method which makes the actual request to the api.
 
 ~~~
