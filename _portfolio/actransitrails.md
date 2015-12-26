@@ -49,7 +49,7 @@ By keeping the API-specific code entirely within the gem, Ruby developers lookin
 
 
 {:.center}
-![Screenshot of BayCrosser web app.]({{ site.baseurl }}/img/baycrosserapp.png)
+![Screenshot of BayCrosser web app.]({{ site.baseurl }}/img/baycrossercolor.png)
 
 In order to demo the gem, I wrote a small transit web app, [BayCrosser](http://baycrosser.herokuapp.com), that pulls updated Transbay bus schedules.  (Transbay buses cross the Bay Bridge, allowing commuters from the East Bay to get into Downtown SF).
 
