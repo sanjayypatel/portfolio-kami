@@ -66,6 +66,9 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+  apps:
+    output: true
+    permalink: /apps/:path/
 
 # BUILD SETTINGS
 markdown: kramdown
