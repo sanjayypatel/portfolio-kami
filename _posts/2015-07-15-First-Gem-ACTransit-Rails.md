@@ -5,17 +5,17 @@ date:   2015-07-15 03:06:00
 tags: gem ruby actransit rspec learning
 ---
 
-Here's my first stab at a gem and the open-source dev community - ACTransitRails - [RubyGems](https://rubygems.org/gems/actransit_rails)
+Here's my first stab at a gem and the open-source dev community - [ACTransitRails](https://github.com/sanjayypatel/actransit_rails), hosted on [RubyGems](https://rubygems.org/gems/actransit_rails)
 
 It's a little Ruby wrapper for the [ACTransit API](http://api.actransit.org/transit/) that allows you to access the route and bus stop info for the Bay Area ACTransit system. 
 
-Their API is pretty straightforward set of requests, including an access token, that respond with JSON formated information, so this seemed like a good topic to dip my feet into gem creation, which is brand new for me.  
+Their API is pretty straightforward set of requests that respond with JSON formated information, so this seemed like a good topic to dip my feet into gem creation.
 
 Here's a little rundown of what I did.
 
 * I built a module, `ACTransitRails`, that defined all of the helper methods I wanted to create.  Each helper method defines a `URI` instance that takes a string formatted like "http://api.actransit.org/transit/...options.../?token='api_access_token'"
 
-Then the uri is passed to the private get_response method which makes the actual request to the api.
+Then the uri is passed to the private get_response method which makes the actual request to the api. Here's an example helper function:
 
 ~~~
 module ACTransitRails
@@ -41,7 +41,7 @@ module ACTransitRails
 end
 ~~~
 
-* This request is formated as an `Net::HTTP` request in a private method `get_response(uri)`.
+This request is formated as an `Net::HTTP` request in a private method `get_response(uri)`.
 
 ~~~
   def self.get_response(uri)
@@ -51,16 +51,20 @@ end
   end
 ~~~
 
-* The `uri` passed to `get_response` is created in each of the helper method, as each method needs a specifically formatted url. Last, the response from the api is returned as JSON, which can be parsed into arrays and hashes using JSON.parse.
+The `uri` passed to `get_response` is created in each of the helper methods, as each method needs a specifically formatted url. Last, the response from the api is returned as JSON, which can be parsed into arrays and hashes using JSON.parse.
 
-So that's basically it.  To use the gem, you call `ACTransitRails.configure(access_token)` where access_token is your access token as a string. Then following calls to helper methods will use your token to make requests of the api.
+So that's basically it.  To use the gem, you call `ACTransitRails.configure(access_token)` where `access_token` is your api access token as a string. Then following calls to helper methods will use your token to make requests of the api. 
+
+*(You get an access token by registering an application with [ACTransit's API](http://api.actransit.org/transit/Account/Register).)*
+
+Here's an example call to the api using a helper function:
 
 ~~~
 ACTransitRails.get_route('E')
 # => {"RouteId":"E","Name":"E","Description":"San Francisco - Claremont -Parkwood"}
 ~~~
 
-The return values for each method varies, either arrays or hashes, which is how the api responds to different requests.  I think the next thing I'll look into doing is formatting all of the responses in a standardized way, although that will take some thinking.  For now, the gem successfully simplifies a dev's access to the api in their rails apps, while still returning response in the api-expected formats, and that's good for now.  
+The return values for each method varies, either arrays or hashes, which is how the api responds to different requests.  I think the next thing I'll look into doing is formatting all of the responses in a standardized way, although that will take some thinking.  For now, the gem successfully simplifies a dev's access to the api in their rails apps, while still returning responses in the api-expected formats, and that's good for now.  
 
 Check out the code over on [Github.](https://github.com/sanjayypatel/actransit_rails/)  Collaborators and contributors welcome!
 
