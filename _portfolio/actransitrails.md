@@ -29,7 +29,7 @@ Commuting in the Bay Area is a complex challenge that combines trains, subways, 
 
 ##Development
 
-Though familar with building Rails apps, the structure of a gem's library and files was a mystery to me. To get off the ground I started with a little background [Ruby Gems Guides.](http://guides.rubygems.org/make-your-own-gem/)
+Though familar with building Rails apps, the structure of a gem's library and files was a mystery to me. To get off the ground I started with a little background: [Ruby Gems Guides](http://guides.rubygems.org/make-your-own-gem/).
 
 ###Starting with tests
 Taking a test-driven approach to development meant looking at the app from the perspective of future users (other developers). I envisioned a set of helper functions that could be called from controller actions, that returned with data ready to be saved to the database or formatted for views.
@@ -59,6 +59,8 @@ The app is designed to fit one simple role: telling you available trips for a se
 
 ## Further development
 
-Working on a demo application revealed that the gem could do more to simplify API access. Beyond mapping more of the possible API requests to help functions, the gem could do more to the JSON response data to make it easier to work with.
+Working on a demo application revealed that the gem could do more to simplify API access. Beyond mapping more of the possible API requests to helper functions, the gem could do more to the JSON response data to make it easier to work with.
 
 One idea I had was to create Ruby classes to model the various responses from the API.  For example, the `get_trips` function currently returns an array of hashes, each hash representing a discrete trip.  The hashes use the API's keys to retrieve values from the hash, which don't follow a very 'ruby-esque' naming convention. To make dealing with this output easier, an ACTransitRails::Trip object could be created with the data from each hash. An array of Trip objects would be easier to developers to work with than arrays and hashes. 
+
+I've started working on this feature in [this branch](https://github.com/sanjayypatel/actransit_rails/tree/feature/response-classes) and will post updates when it's ready to deploy!

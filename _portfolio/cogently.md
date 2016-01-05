@@ -75,7 +75,7 @@ In developing Cogently, I learned some tough lessons and tried new approaches to
 
 My development goals for Cogently focused on writing better code than in my previous projects, specifically employing Haml and isolating Bootstrap from my code. 
 
-On the recommendation of my mentor, I employed a pair of gems ([haml/haml](https://github.com/haml/haml) and [indirect/haml-rails](https://github.com/indirect/haml-rails)) to convert my views from embedded ruby (erb) files to haml. 
+On the recommendation of my mentor, I employed a pair of gems ([haml/haml](https://github.com/haml/haml) and [indirect/haml-rails](https://github.com/indirect/haml-rails)) to convert my views from embedded ruby (erb) files to haml. With strict whitespace and indentation rules, Haml makes code in views much easier to read while discouraging lazy code formatting. 
 
 While researching Bootstrap best practices I encountered several articles about Bootstrap maintainability and extending existing classes in Sass. Here's an abbreviated reading list:
 
@@ -83,7 +83,7 @@ While researching Bootstrap best practices I encountered several articles about 
 * [Using Sass To Semantically @extend Bootstrap](http://www.sitepoint.com/sass-semantically-extend-bootstrap/)
 * [The Extend Concept](https://css-tricks.com/the-extend-concept/)
 
-The objective was to create code that could easily replace Bootstrap with a ground-up CSS rewrite or different CSS library without requiring a messy rewrite of all views or risky find-all and replace operation.
+The objective was to create code that could easily replace Bootstrap with a ground-up CSS rewrite or different CSS library without requiring a messy rewrite of all views or risky find-all and replace operation. I accomplished this by writing views that used extensions of Boostrap classes instead of writing those classes directly into my code.
 
 ### Parsing limitations
 
@@ -92,7 +92,7 @@ The objective was to create code that could easily replace Bootstrap with a grou
 
 <p class="image-caption">Example document uploaded to Cogently.</p>
 
-Granular PDF parsing is a bit beyond the skillset of a junior web developer, although some useful gems and libraries exist to make it easier. One big challenge was finding a way to extract images embedded in PDFs in a way that Rails could storethem. Since that was beyond the scope of my prototype's goals, I decided to focus on extracting only the PDF text, which is a comparatively simpler process.
+Granular PDF parsing is a bit beyond the skillset of a junior web developer, although some useful gems and libraries exist to make it easier. One big challenge was finding a way to extract images embedded in PDFs in a way that Rails could store them. Since that was beyond the scope of my prototype's goals, I decided to focus on extracting only the PDF text, which is a comparatively simpler process.
 
 One way to improve this aspect of Cogently in the furture would be to replace the Paragraph model that represents a specific line in a PDF with a Page model. This would:
 

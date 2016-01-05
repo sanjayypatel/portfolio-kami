@@ -12,13 +12,21 @@ short-description: A markdown wiki SaaS.
 
 Wiki Pocket was developed as part of the [Bloc](https://bloc.io) Ruby on Rails training. It provides users the ability to create Markdown wikis and to share wikis with collaborators. 
 
+---
+
 ## Challenge
 
 Developing Wiki Pocket presented me with a new challenge in web application development - integrating third party APIs.
 
-Since Wiki Pocket's primary function was to facilitate wiki creation, I designed a user experience that leverages the dynamic bookmarking of [Pocket](http://getpocket.com) to easily create new Wikis. 
+[Pocket](http://getpocket.com) is a platform for saving links for later consumption while browsing on a desktop or mobile device. It even integrates with many common apps such as Twitter and Facebook.
 
-Pocket is a platform for saving links for later consumption while browsing on a desktop or mobile device. It even integrates with many common apps such as Twitter and Facebook.  The ability to generate wikis easily from links saved to a user's Pocket account would open up Wiki Pocket to a multitude of information sources that spans all of a user's online activity.
+Since Wiki Pocket's primary function was to facilitate wiki creation, I designed a user experience that leverages the dynamic bookmarking of Pocket to easily create new Wikis in three easy steps
+
+1. A user finds an interesting link and saves it to Pocket.
+2. The user searches for the link in Wiki Pocket, which is connected to their Pocket account.
+3. The user creates a new wiki based on the saved link with a single button click.
+
+---
 
 ## Solution
 
@@ -52,7 +60,7 @@ class LinksController < ApplicationController
   end
 ~~~
 
-Now, the `Links#index` view can show either links retrieved from the Pocket API or links from the Links Table, depending on the presence of a :pocket_search value in params. Links retrieved from the API are stored in Link objects, but not saved to the database.
+Now, the `Links#index` view can show either links retrieved from the Pocket API or links from the Links Table, depending on the presence of a `:pocket_search` value in params. Links retrieved from the API are stored in Link objects, but not saved to the database.
 
 In the `Links#index` view, we can show the retrieved links and create a form to save a link from Pocket.
 
