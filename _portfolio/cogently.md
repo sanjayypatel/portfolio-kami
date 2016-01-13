@@ -29,21 +29,21 @@ With this core challenge in mind, Cogently was planned to satisfy a series of us
 
 > ### As a user I want to be able to
 >
-> * upload documents that are available only to my organization.
-> * add tags to documents to make document discovery easier.
-> * add notes to specific lines in a document and respond to the notes of others.
-> * write or edit a summary for each document.
-> * view and download the original document.
+> * Upload documents that are available only to my organization.
+> * Add tags to documents to make document discovery easier.
+> * Add notes to specific lines in a document and respond to the notes of others.
+> * Write or edit a summary for each document.
+> * View and download the original document.
 
-From a development perspective I had a different set of goals. Cogently served as a opportunity to grow further as a Rails developer.
+From a development perspective I had a different set of goals. Cogently allowed me the opportunity to grow further as a Rails developer.
 
 > ### As a developer I want to
 >
-> * create a Ruby on Rails app with feature set focused on core user stories.
-> * leverage Bootstrap's front end framework for a simple user interface.
-> * isolate Bootstrap-specific classes from my own code.
-> * convert views to [Haml](http://haml.info) for more readable code.
-> * expand upon standard Devise-based accounts with email invitations to join the app.
+> * Create a Ruby on Rails app with feature set focused on core user stories.
+> * Leverage Bootstrap's front end framework for a simple user interface.
+> * Isolate Bootstrap-specific classes from my own code.
+> * Convert views to [Haml](http://haml.info) for more readable code.
+> * Expand upon standard Devise-based accounts with email invitations to join the app.
 
 ---
 

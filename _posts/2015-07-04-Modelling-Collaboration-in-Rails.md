@@ -17,21 +17,21 @@ Here's how I setup the models:
 
 User.rb
 
-```ruby
+~~~ruby
   has_many :collaborations
   has_many :wikis
   has_many :shared_wikis, through: :collaborations, source: :wiki
-```
+~~~
 
 On the third line, `source: :wiki` allows me to call `user.shared_wikis` to access any wikis that have been shared with the user by other authors and avoids colliding with `user.wikis`.
 
 Wiki.rb
 
-```ruby
+~~~ruby
   belongs_to :user
   has_many :collaborations
   has_many :users, through: :collaborations
-```
+~~~
 
 Next I needed generate the Collaboration model:
 
@@ -39,10 +39,10 @@ Next I needed generate the Collaboration model:
 
 Collaboration.rb
 
-```ruby
+~~~ruby
   belongs_to :user
   belongs_to :wiki
-```
+~~~
 
 Basically, User has_many Wikis in two relationships, one directly between the Users and Wikis tables, and one through the Collaboration join table.
 

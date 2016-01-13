@@ -11,7 +11,7 @@ short-description: A gem for accessing the AC Transit API in Rails.
 
 ## Background
 
-ACTransit_Rails started as an attempt to solve a problem on an entirely different project.  Sketching and brainstorming an app to simplify commuting across the San Francisco Bay by bus led me to the [AC Transit Bus API](http://api.actransit.org/transit/) to access routes, stop locations and schedules with simple HTTP requests.
+ACTransit_Rails started as an attempt to solve a problem on an entirely different project.  Sketching and brainstorming an app to simplify commuting across the San Francisco Bay by bus, led me to the [AC Transit Bus API](http://api.actransit.org/transit/) to access routes, stop locations and schedules with simple HTTP requests.
 
 The opportunity to contribute something new to the open source community, simplify access to public tansit data, and further challenge myself as a developer motivated me to write [this little gem.](https://github.com/sanjayypatel/actransit_rails)
 
@@ -40,7 +40,7 @@ I wrote RSpec specs that defined what kind of output I wanted to receive from th
 
 Each helper function I wrote mapped functionality to a specific request that could be made to the AC Transit API.
 
-I wrote a short [blog post](/2015/07/14/First-Gem-ACTransit-Rails.html) that goes into greater detail about the structure of these requests, but in short, the helper functions formatted a proper API request as a URI object.
+I wrote a short [blog post]({{ site.baseurl }}/2015/07/14/First-Gem-ACTransit-Rails.html) that goes into greater detail about the structure of these requests, but in short, the helper functions formatted a proper API request as a URI object.
 
 Using the Net::HTTP library, the request to the API could be made with the URI and the JSON response captured. Before passing the response back to the original function call, the JSON is parsed into a Ruby array of hashes or simply a Ruby hash depending on the request.
 
