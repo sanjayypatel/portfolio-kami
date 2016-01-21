@@ -1,15 +1,5 @@
-# Portfolio Kami Theme
-## Based on Type Theme
+###Personal Portfolio and Blog of Sanjay Yoshimitsu Patel.
 
-![Default Type Theme blog](https://bloc-global-assets.s3.amazonaws.com/portfolio/portfolio-kami.png)
+Live at http://sanjayypatel.com
 
-A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and easy to customize.
-
-## Get Started
-
-[Demo](http://madebymunsters.github.io/Lannister/)
-
-[Using Type](https://rohanchandra.github.io/project/type/)
-
-## License
-The MIT License (MIT)
+Based on Portfolio Kami Theme
