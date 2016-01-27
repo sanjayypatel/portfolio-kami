@@ -3,6 +3,7 @@ layout: post
 title: actransit_rails
 thumbnail-path: "img/actransitrails.png"
 short-description: A gem for accessing the AC Transit API in Rails.
+id: actransit_rails
 ---
 
 {:.center}

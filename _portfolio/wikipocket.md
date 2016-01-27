@@ -3,6 +3,7 @@ layout: post
 title: Wiki Pocket
 thumbnail-path: "img/wikipocket.png"
 short-description: A markdown wiki SaaS.
+id: wikipocket
 ---
 
 {:.center}

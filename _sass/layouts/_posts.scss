@@ -17,10 +17,9 @@ article {
   }
   p {
     img {
-      border-left:10px solid $header-desc-background-color;
       text-align:center;
       margin:0 auto;
-      box-shadow: 1px 1px 5px lightgrey;
+      box-shadow: 1px 1px 5px black;
     }
   }
   p.small-img {

@@ -15,8 +15,8 @@ theme:
      <p>Backend web developer specializing in Ruby on Rails.</p>
   header_text_feature_image: 
   footer_text: >
-   <p>Powered by <a href="http://jekyllrb.com">Jekyll</a> and caffeine.</p>
-   <p>Theme forked from <a href="https://github.com/Bloc/portfolio-kami">Bloc/portfolio-kami.</p>
+   <p >Powered by <a href="http://jekyllrb.com" class="footer-link">Jekyll</a>.</p>
+   <p>Theme forked from <a href="https://github.com/Bloc/portfolio-kami" class="footer-link">Bloc/portfolio-kami.</p>
 
   # Icons
   rss: true
@@ -55,20 +55,17 @@ theme:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Raleway:300,400,700,300italic,700italic|Quattrocento:400,700"
+  google_fonts: "Raleway:300,400,700,300italic,700italic|Lato:400,300,700"
 
 # PAGINATION
-paginate: 100
-paginate_path: "blog/page:num"
+paginate: 4
+paginate_path: "writing/page:num"
 
 # COLLECTIONS
 collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
-  apps:
-    output: true
-    permalink: /apps/:path/
 
 # BUILD SETTINGS
 markdown: kramdown
