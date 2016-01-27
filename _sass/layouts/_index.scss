@@ -116,6 +116,9 @@
           font-size:5em;
           margin-bottom:0.5em;
           font-weight:600;
+          @media (max-width: 768px) {
+            font-size: 2em;
+          }
         }
       }
       p a:hover {
@@ -129,7 +132,15 @@
       margin-top: 1em;
     }
   }
-  
+  .get-in-touch {
+    display: block;
+    float: left;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
 }
 // Pagination
 .pagination .button {

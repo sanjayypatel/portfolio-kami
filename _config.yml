@@ -15,7 +15,7 @@ theme:
      <p>Backend web developer specializing in Ruby on Rails.</p>
   header_text_feature_image: 
   footer_text: >
-   <p >Powered by <a href="http://jekyllrb.com" class="footer-link">Jekyll</a>.</p>
+   <p>Powered by <a href="http://jekyllrb.com" class="footer-link">Jekyll</a>.</p>
    <p>Theme forked from <a href="https://github.com/Bloc/portfolio-kami" class="footer-link">Bloc/portfolio-kami.</p>
 
   # Icons
