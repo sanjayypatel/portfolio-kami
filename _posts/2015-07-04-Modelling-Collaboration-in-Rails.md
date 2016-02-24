@@ -3,6 +3,7 @@ layout: post
 title:  "Modeling Collaboration in Rails"
 date:   2015-07-04 02:47:00
 tags: mvc rails join-table collaboration
+center: true
 ---
 
 In my [current project](https://github.com/sanjayypatel/wiki-pocket) in the Bloc.io Ruby on Rails course, I'm tackling a particularly confusing topic (confusing to me, at least) - Collaboration.  

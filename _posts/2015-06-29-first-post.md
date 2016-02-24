@@ -3,6 +3,7 @@ layout: post
 title:  "First Post!"
 date:   2015-06-29 10:59:40
 tags: blog about
+center: true
 ---
 All right! Launching a blog to capture some of my lesson-learned while learning how to develop in Ruby on Rails.
 

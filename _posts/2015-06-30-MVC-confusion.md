@@ -3,6 +3,7 @@ layout: post
 title:  "MVC Confusion"
 date:   2015-06-30 12:15:00
 tags: mvc rails fat-model skinny-controller
+center: true
 ---
 The Model-View-Controller (MVC) software architecture is the guiding principle of Ruby on Rails development, but I found it one of the biggest stopping points in my education.  Though Rails goes a long way towards simplifying and codifying how these three pieces of your application interact, some of the "magic" Rails does for you obfuscates their real interactions.  
 

@@ -3,9 +3,10 @@ layout: page
 title: Contact
 permalink: /contact/
 feature-img: "img/color.png"
+center: true
 ---
 
-###There's a lot of ways to get in touch, so feel free to reach out!
+### There's a lot of ways to get in touch, so feel free to reach out!
 *I'm on twitter most easily reached on twitter, though. ;)*
 
 _Email:_ [sanjay.y.patel@gmail.com](mailto:sanjay.y.patel@gmail.com)

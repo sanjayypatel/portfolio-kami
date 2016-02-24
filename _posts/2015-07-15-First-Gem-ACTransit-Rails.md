@@ -3,6 +3,7 @@ layout: post
 title:  "First Gem - ACTransitRails"
 date:   2015-07-15 03:06:00
 tags: gem ruby actransit rspec learning
+center: true
 ---
 
 Here's my first stab at a gem and the open-source dev community - [ACTransitRails](https://github.com/sanjayypatel/actransit_rails), hosted on [RubyGems](https://rubygems.org/gems/actransit_rails)

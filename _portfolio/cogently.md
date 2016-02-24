@@ -3,7 +3,8 @@ layout: post
 title: Cogently
 thumbnail-path: "img/cogently.png"
 short-description: An executive summary app.
-id: cogently
+project-id: cogently
+center: true
 ---
 
 {:.center}

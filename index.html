@@ -5,7 +5,7 @@ layout: default
   <div class="work">
     <h2 id="work">Work</h2>
     {% for project in site.portfolio limit:100 %}
-    <div class="project" id="{{project.id}}">
+    <div class="project" id="{{project.project-id}}">
       <div class="project-description">
         <a href="{{ project.url | prepend: site.baseurl }}"><strong>{{ project.title }}</strong></a>
         <p>{{ project.short-description }}</p>

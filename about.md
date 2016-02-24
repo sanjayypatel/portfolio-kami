@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 feature-img:
+center: true
 ---
 {:.center.small-img}
 ![]({{ site.baseurl }}/img/sanjayheadzoom.png)
