@@ -1,13 +1,19 @@
-var toggles = $('.resume-toggle');
-$('.resume-toggle').on('click', function() {
-  console.log('clicked');
-  if($(this).next().hasClass('hidden')) {
-    isHidden = false;
-    $(this).next().removeClass('hidden');
-    $(this).html('Less');
+var jobButtons = document.getElementsByClassName('job-button');
+
+var toggleJobDescription = function () {
+  var description = this.nextElementSibling;
+  var duties = description.nextElementSibling;
+  if( description.style.display === 'block') {
+    this.innerHTML = 'More';
+    description.style.display = 'none';
+    duties.style.display = 'none';
   } else {
-    isHidden = true;
-    $(this).next().addClass('hidden');
-    $(this).html('More');
+    this.innerHTML = 'Less';
+    description.style.display = 'block';
+    duties.style.display = 'block';
   }
-});
+};
+
+for(t in jobButtons) {
+  jobButtons[t].addEventListener('click', toggleJobDescription);
+}
