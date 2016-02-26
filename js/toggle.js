@@ -1,14 +1,14 @@
 var jobButtons = document.getElementsByClassName('job-button');
 
 var toggleJobDescription = function () {
-  var description = this.nextElementSibling;
+  var description = this.nextElementSibling.nextElementSibling;
   var duties = description.nextElementSibling;
   if( description.style.display === 'block') {
-    this.innerHTML = 'More';
+    // this.innerHTML = 'More';
     description.style.display = 'none';
     duties.style.display = 'none';
   } else {
-    this.innerHTML = 'Less';
+    // this.innerHTML = 'Less';
     description.style.display = 'block';
     duties.style.display = 'block';
   }

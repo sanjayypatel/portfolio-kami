@@ -121,5 +121,22 @@ article {
   // float: left;
 }
 .job-button {
-  // float: left;
+  float: left;
+  padding: 5px;
+  margin-right: 10px;
+  width: 50px;
+}
+.disclosure-triangle {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+  // margin-right: 10px;
+}
+.job-button:hover {
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7);
+}
+.rotate-ninety {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
 }
