@@ -118,7 +118,6 @@ article {
   clear: both; 
 }
 .job-title {
-  // float: left;
 }
 .job-button {
   float: left;
@@ -130,10 +129,9 @@ article {
   display: block;
   width: 25px;
   margin: 0 auto;
-  // margin-right: 10px;
 }
 .job-button:hover {
-  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7);
+  // box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.7);
 }
 .rotate-ninety {
   -ms-transform: rotate(90deg); /* IE 9 */

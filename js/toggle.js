@@ -1,19 +1,14 @@
-var jobButtons = document.getElementsByClassName('job-button');
+$(function () {
+  var $jobButtons = $('.job-button');
 
-var toggleJobDescription = function () {
-  var description = this.nextElementSibling.nextElementSibling;
-  var duties = description.nextElementSibling;
-  if( description.style.display === 'block') {
-    // this.innerHTML = 'More';
-    description.style.display = 'none';
-    duties.style.display = 'none';
-  } else {
-    // this.innerHTML = 'Less';
-    description.style.display = 'block';
-    duties.style.display = 'block';
-  }
-};
+  var toggleJobDescription = function () {
+    var jobButton = $(this);
+    var description = jobButton.siblings('.job-description');
+    var duties = jobButton.siblings('.job-duties');
+    jobButton.toggleClass('rotate-ninety');
+    description.slideToggle();
+    duties.slideToggle();
+  };
 
-for(t in jobButtons) {
-  jobButtons[t].addEventListener('click', toggleJobDescription);
-}
+  $jobButtons.mouseup(toggleJobDescription);  
+});
