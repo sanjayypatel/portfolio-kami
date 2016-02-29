@@ -50,9 +50,6 @@ article {
   .job-duties {
     display: none;
   }
-  .degree {
-    margin-left: 1em;
-  }
   .backdrop {
     margin: 0;
     padding: 2em;
@@ -89,24 +86,43 @@ article {
     margin: 0 auto;
     width: 98%;
   }
-  #academy-of-art,
+  #academy-of-art {
+    background: linear-gradient(45deg, rgba(255, 116, 115, 0.7), rgba(255,116,115, 0.97) 70%), url('../img/180nm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #bloc,
   #confident {
     background: #ff7473;
   }
-  #hudson,
+  #hudson {
+    background: linear-gradient(315deg, rgba(249, 161, 27, 0.7), rgba(249, 161, 27, 0.97) 70%), url('../img/HudsonLogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #expression,
   #comfortable {
     background: #f9a11b;
   }
-  #avms,
+  #avms {
+    background: linear-gradient(45deg, rgba(71, 184, 224, 0.7), rgba(71, 184, 224, 0.97) 70%), url('../img/mic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #berkeley,
   #familiar {
     background: #47b8e0;
   }
-  #third-ear,
+  #third-ear {
+    background: linear-gradient(315deg, rgba(52, 49, 76, 0.7), rgba(52, 49, 76, 0.97) 70%), url('../img/thirdear.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #certifications {
     background: #34314c;
+  }
+  #academy-building {
+    float: right;
   }
 }
 .hidden {
@@ -137,4 +153,46 @@ article {
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
   transform: rotate(90deg);
+}
+.feature-img {
+  display: inline-block;
+  float: right;
+  max-width: 30%;
+  padding: 2em 10% 2em 2em;
+  @media (max-width: 768px) {
+    float: none;
+    display: block;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .school-name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .degree {
+    font-size: 1em;
+  }
+  .school-info {
+    font-size: 1em;
+    font-style: italic;
+  }
+}
+.education-content {
+  display:  inline-block;
+  width: 50%;
+  color: white;
+  margin: 0 0 0 10%;
+  @media (max-width: 768px) {
+    width: 98%;
+  }
+}
+#head-cross-section,
+#computer,
+#waveform {
+  width: 120px;
+  @media (max-width: 768px) {
+    display: block;
+    margin: 0 auto;
+  }
 }
