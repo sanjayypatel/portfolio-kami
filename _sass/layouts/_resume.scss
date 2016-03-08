@@ -1,36 +1,72 @@
 article {
-  .resume-nav {
-    display: block;
-    list-style: none;
-    margin: 0;
-    li {
-      margin: 0;
+  .resume-header {
+    background: #4495F2;
+    padding: 0 5% 0 0%;
+    #title-and-nav {
+      width: 80%;
       display: inline-block;
-      a.resume-button,
-      a.resume-button:hover {
-        padding-right: 1em;
-        color: #4a4a4a;
-        @media (max-width: 768px) {
-          padding-right: 0.5em;
-          font-size: 0.75em;
+    }
+    #mosaic-portrait {
+      display: inline-block;
+      width: 15%;
+      margin: 0;
+    }
+    #resume-title {
+      display: inline-block;
+      margin: 0 0.5em 0 0;
+      color: white;
+    }
+    .resume-nav {
+      list-style: none;
+      margin: 0;
+      li {
+        margin: 0;
+        display: inline-block;
+        a.resume-button,
+        a.resume-button:hover {
+          padding-right: 1em;
+          color: white;
+          @media (max-width: 768px) {
+            padding-right: 0.5em;
+            font-size: 0.75em;
+          }
         }
       }
     }
   }
-  #resume-header {
-    padding-left: 0.5em;
-  }
   .resume-section {
     display: block;
     padding: 0;
+    margin: 0;
   }
   .resume-section-title{
-    text-align: left;
-    margin: 0;
-    padding: 1em 0 0 0;
-    background: #4a4a4a;
+    margin: 0 0.5em 0 0;
     color:white;
+    display: inline-block;
+  }
+  .resume-section-divider {
+    margin: 0;
+    padding: 2em 0 0 0;
+    background: #4a4a4a;
     box-shadow: inset 0px 0px 10px #000;
+    .resume-nav {
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+      li {
+        margin: 0;
+        display: inline-block;
+        a.resume-button,
+        a.resume-button:hover {
+          padding-right: 1em;
+          color: white;
+          @media (max-width: 768px) {
+            padding-right: 0.5em;
+            font-size: 0.75em;
+          }
+        }
+      }
+    }
   }
   .job-description {
     font-style: italic;
@@ -70,6 +106,10 @@ article {
     @media (max-width: 1024px) {
       width: 100%;
     }
+  }
+  .skills-col-full {
+    width: 100%;
+    float: left;
   }
   .centered-content {
     display:  block;
@@ -118,7 +158,8 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #certifications {
+  #certifications,
+  #learning {
     background: #34314c;
   }
   #academy-building {
