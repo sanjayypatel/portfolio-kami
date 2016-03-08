@@ -1,19 +1,25 @@
 ---
-layout: page
+layout: resume
 title: Resume
 hide: true
 center: false
 ---
-<div id="resume-header">
-  <ul class="resume-nav">
-    <li><a href="{{ site.baseurl }}/file/spatelresume.pdf" class="resume-button">PDF Version</a></li>
-    <li><a href="{{ site.baseurl }}/contact" class="resume-button">Contact</a></li>
-    <li><a href="http://github.com/sanjayypatel" class="resume-button">Github</a></li>
-  </ul>
+<div class="resume-header">
+  <div id="title-and-nav">
+    <ul class="resume-nav">
+      <h1 id="resume-title">Resume</h1>
+      <li><a href="{{ site.baseurl }}/file/spatelresume.pdf" class="resume-button">PDF Version</a></li>
+    </ul>
+  </div>
+  <img id="mosaic-portrait" src="{{ site.baseurl }}/img/headWbackground_512w.png">
 </div>
 <div id="experience" class="resume-section">
-  <div class="resume-section-title">
-    <h1>Experience</h1>
+  <div class="resume-section-divider">
+    <ul class="resume-nav">
+      <li><h1 class="resume-section-title">Experience</h1></li>
+      <li><a href="#education" class="resume-button">Education & Training</a></li>
+      <li><a href="#skills" class="resume-button">Skills</a></li>
+    </ul>
   </div>
   <div id="academy-of-art" class="backdrop">
     <div class="centered-content">
@@ -96,8 +102,12 @@ center: false
   </div>
 </div>
 <div id="education" class="resume-section">
-  <div>
-    <h1 class="resume-section-title">Education & Training</h1>
+  <div class="resume-section-divider">
+    <ul class="resume-nav">
+      <li><a href="#experience" class="resume-button">Experience</a></li>
+      <li><h1 class="resume-section-title">Education & Training</h1></li>
+      <li><a href="#skills" class="resume-button">Skills</a></li>
+    </ul>
   </div>
   <div  id="bloc" class="backdrop">
     <div class="feature-img">
@@ -141,7 +151,13 @@ center: false
   </div>
 </div>
 <div id="skills" class="resume-section">
-  <h1 class="resume-section-title">Skills</h1>
+  <div class="resume-section-divider">
+    <ul class="resume-nav">
+      <li><a href="#experience" class="resume-button">Experience</a></li>
+      <li><a href="#education" class="resume-button">Education & Training</a></li>
+      <li><h1 class="resume-section-title">Skills</h1></li>
+    </ul>
+  </div>
   <div id="confident" class="backdrop skills-col-lg">
     <div class="skills-content">
       <h2>Confident</h2>
@@ -175,6 +191,16 @@ center: false
         <li>Javascript, jQuery, AJAX</li>
         <li>Sublime Text, Command Line</li>
         <li>Sketch</li>
+      </ul>
+    </div>
+  </div>
+  <div id="learning" class="backdrop skills-col-full">
+    <div class="skills-content">
+      <h2>Learning</h2>
+      <ul class="skills-list">
+        <li>Ubuntu servers, AWS EC2</li>
+        <li>Chef server configuration and Ruby scripting</li>
+        <li>Server/App monitoring</li>
       </ul>
     </div>
   </div>
