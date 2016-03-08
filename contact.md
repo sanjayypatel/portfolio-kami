@@ -9,6 +9,9 @@ center: true
 ### There's a lot of ways to get in touch, so feel free to reach out!
 *I'm on twitter most easily reached on twitter, though. ;)*
 
+<a class="typeform-share" href="https://sanjayypatel.typeform.com/to/zOWCMz" data-mode="1" target="_blank">Or you can just contact me directly!</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
 _Email:_ [sanjay.y.patel@gmail.com](mailto:sanjay.y.patel@gmail.com)
 
 _Twitter:_ [@sanjayypatel](http://twitter.com/sanjayypatel)
@@ -22,15 +25,3 @@ _VSCO:_ [sanjaypatel](http://sanjaypatel.vsco.co/)
 _Instagram:_ [sanjayypatel](https://www.instagram.com/sanjayypatel/)
 
 _Itch.io:_ [Sanjay](http://sanjay.itch.io/)
-
----
-
-<h3 id="contact-form">Send me a message!</h3>
-<form action="https://getsimpleform.com/messages?form_api_token=7a2e3d4bd19e7acbd621858e9a9ee421" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='http://sanjayypatel.com/thank-you/' />
-  <input type='text' name='name' placeholder='Your Full Name' />
-  <input type='email' name='email' placeholder='Your E-mail Address' />
-  <textarea name='message' placeholder='Write your message ...'></textarea>
-  <input type='submit' value='Send Message' />
-</form>
