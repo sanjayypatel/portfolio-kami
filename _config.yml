@@ -21,7 +21,7 @@ theme:
   # Icons
   rss: true
   email_address: sanjay.y.patel@gmail.com # Full email address, e.g. "sam@example.com"
-  behance:
+  behance: sanjayypatel
   bitbucket:
   dribbble: 
   facebook: 
@@ -32,13 +32,14 @@ theme:
   linkedin: http://linkedin.com/in/sanjayypatel # Full URL
   pinterest:
   reddit:
-  soundcloud:
+  soundcloud: sanjayypatel
   stack_exchange:  # Full URL
   steam:
   tumblr:
   twitter: sanjayypatel
   wordpress:
   youtube:
+  medium: https://medium.com/@sanjayypatel
 
   # Scripts
   google_analytics: "UA-71701556-1"
