@@ -57,7 +57,6 @@ article {
     margin: 0;
     padding: 2em 0 0 0;
     background: #4a4a4a;
-    box-shadow: inset 0px 0px 10px #000;
     .resume-nav {
       display: inline-block;
       list-style: none;
@@ -245,4 +244,10 @@ article {
     display: block;
     margin: 0 auto;
   }
+}
+.job-toggle {
+  transition: box-shadow 0.5;
+}
+.job-toggle:hover {
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
