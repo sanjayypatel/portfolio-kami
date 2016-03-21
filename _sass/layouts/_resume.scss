@@ -185,20 +185,27 @@ article {
 .job-title {
 }
 .job-button {
+  opacity: 0;
   float: left;
+  text-align: center;
   padding: 5px;
   margin-right: 10px;
-  width: 50px;
+  width: 100px;
+  transition: box-shadow 0.3s ease-out, opacity 0.3s ease-in, border 0.3s ease-in;
+  transition-delay: 0.4s, 0s, 0s;
+}
+.job-toggle:hover .job-button {
+  border: 1px solid white;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+  opacity: 1;
 }
 .disclosure-triangle {
   display: block;
   width: 25px;
   margin: 0 auto;
 }
-.job-button:hover {
-  // box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.7);
-}
 .rotate-ninety {
+  transition-duration: 0.3s;
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
   transform: rotate(90deg);
@@ -247,7 +254,4 @@ article {
 }
 .job-toggle {
   transition: box-shadow 0.5;
-}
-.job-toggle:hover {
-  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
 }

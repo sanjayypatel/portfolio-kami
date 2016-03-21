@@ -26,7 +26,11 @@ var toggleJobDescription = function () {
   var jobButton = jobToggle.children('.job-button');
   var description = jobToggle.siblings('.job-description');
   var duties = jobToggle.siblings('.job-duties');
-  jobButton.toggleClass('rotate-ninety');
+  if(jobButton.html()=='Less'){
+    jobButton.html('More');
+  } else {
+    jobButton.html('Less');
+  }
   description.slideToggle();
   duties.slideToggle();
 };
